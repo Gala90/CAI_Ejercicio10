@@ -10,17 +10,12 @@ namespace Ejercicio10
     {
         static void Main(string[] args)
         {
-            string[] nombres = { "Martin", "Agustina", "Santiago", "Karen", "Gala" };
-            string[] apellidos = { "Rodriguez", "Palacios", "Ramos", "Fernandez", "Magdalena" };
-            string[] edades = { "22", "24", "25", "27", "29" };
+
             string datos;
             string a;
             string b;
-            string c;
-            string nombre = "";
-            string apellido = "";
-            string edad = "";
-           
+            string c;         
+            string numeros = "1 2 3 4 5 6 7 8 9 0";
 
             Console.WriteLine("Ingrese su nombre, apellido y edad: ");
             datos = Console.ReadLine();
@@ -31,54 +26,26 @@ namespace Ejercicio10
             b = palabras[1];
             c = palabras[2];
 
-            if (nombres.Contains(a))
+            if (numeros.Contains(a[0]))
             {
-                nombre = a;
+                Console.WriteLine("Nombre: " + b);
+                Console.WriteLine("Apellido: " + c);
+                Console.WriteLine("Edad: " + a);
             }
-            if (apellidos.Contains(a))
+            if (numeros.Contains(b[0]))
             {
-               apellido = a;
+                Console.WriteLine("Nombre: " + a);
+                Console.WriteLine("Apellido: " + c);
+                Console.WriteLine("Edad: " + b);
             }
-            if (edades.Contains(a))
+            if (numeros.Contains(c[0]))
             {
-                edad = a;
+                Console.WriteLine("Nombre: " + a);
+                Console.WriteLine("Apellido: " + b);
+                Console.WriteLine("Edad: " + c);
             }
-
-            if (nombres.Contains(b))
-            {
-                nombre = b;
-            }
-            if (apellidos.Contains(b))
-            {
-                apellido = b;
-            }
-            if (edades.Contains(b))
-            {
-                edad = b;
-            }
-
-            if (nombres.Contains(c))
-            {
-                nombre = c;
-            }
-            if (apellidos.Contains(c))
-            {
-                apellido = c;
-            }
-            if (edades.Contains(c))
-            {
-                edad = c;
-            }
-
-
-            Console.WriteLine("Nombre: " + nombre);
-            Console.WriteLine("Apellido: " + apellido);
-            Console.WriteLine("Edad: " + edad);
-
-
+         
             Console.ReadKey();
-
-
 
         }
     }
